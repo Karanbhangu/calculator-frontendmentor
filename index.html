@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | KaranBhangu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <nav>
+        <h1 class="fortext">calc</h1>
+        <div class="themeswitch">
+          <div class="one">
+            <span class="fortext">THEME</span>
+          </div>
+          <div class="two">
+            <div class="themes">
+              <span class="fortext">1</span>
+              <span class="fortext">2</span>
+              <span class="fortext">3</span>
+            </div>
+            <div class="maindiv" onclick="toggle(this)" id="barcolor">
+              <div class="togglement"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="screen" id="mainscreen">
+        <input type="text" readonly id="screen">
+      </div>
+      <div class="calc" id="calcbody">
+        <div class="row">
+          <button onclick="insertvalue(this)">7</button>
+          <button onclick="insertvalue(this)">8</button>
+          <button onclick="insertvalue(this)">9</button>
+          <button class="bluew" onclick="del()" id="sp1">DEL</button>
+        </div>
+        <div class="row">
+          <button onclick="insertvalue(this)">4</button>
+          <button onclick="insertvalue(this)">5</button>
+          <button onclick="insertvalue(this)">6</button>
+          <button onclick="insertvalue(this)">+</button>
+        </div>
+        <div class="row">
+          <button onclick="insertvalue(this)">1</button>
+          <button onclick="insertvalue(this)">2</button>
+          <button onclick="insertvalue(this)">3</button>
+          <button onclick="insertvalue(this)">-</button>
+        </div>
+        <div class="row">
+          <button onclick="insertvalue(this)">.</button>
+          <button onclick="insertvalue(this)">0</button>
+          <button onclick="insertvalue(this)">/</button>
+          <button onclick="insertvalue(this)">x</button>
+        </div>
+        <div class="row">
+          <button class="blue" onclick="reset()" id="sp2">RESET</button>
+          <button class="red" onclick="calcu()" id="sp3">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
