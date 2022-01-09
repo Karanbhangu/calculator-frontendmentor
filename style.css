@@ -38,6 +38,7 @@ nav {
           justify-content: space-between;
   color: #fff;
   height: 10vh;
+  font-weight: bold;
 }
 
 .themeswitch {
@@ -56,6 +57,7 @@ nav {
 .themeswitch span {
   font-size: smaller;
   margin-right: 15px;
+  font-weight: bold;
 }
 
 .maindiv {
@@ -109,6 +111,7 @@ nav {
 .themes span {
   font-size: x-small;
   margin: 0;
+  font-weight: bold;
 }
 
 .screen {
@@ -169,6 +172,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .row {
